@@ -1,0 +1,9 @@
+# Basic Stuff
+PATH=$PATH:$HOME/.scripts
+export EDITOR='nvim'
+export PATH=~/.local/bin:$PATH #PTSH
+export TERM="xterm-256color"
+
+# Insensitive Autocompletion
+autoload -Uz compinit && compinit
+zstyle ':completion:*' matcher-list '' 'm:{a-zA-Z}={A-Za-z}'
